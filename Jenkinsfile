@@ -11,19 +11,19 @@ pipeline {
 
     stage('Compile the Code') {
       steps {
-        sh 'compile code'
+        sh 'echo compile code'
       }
     }
 
     stage('Check the Code Quality') {
       steps {
-        sh 'Check the code Quality'
+        sh 'echo Check the code Quality'
       }
     }
 
     stage('Test Cases') {
       steps {
-        sh 'Test Cases'
+        sh 'echo Test Cases'
       }
     }
 
