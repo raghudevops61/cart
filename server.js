@@ -1,4 +1,12 @@
 const redis = require('redis');
+const redis = require('redis');
+const redis = require('redis');
+const redis = require('redis');
+const redis = require('redis');
+const redis = require('redis');
+const redis = require('redis');
+const redis = require('redis');
+const redis = require('redis');
 const request = require('request');
 const bodyParser = require('body-parser');
 const express = require('express');
@@ -7,6 +15,10 @@ const expPino = require('express-pino-logger');
 // Prometheus
 const promClient = require('prom-client');
 const Registry = promClient.Registry;
+const register = new Registry();
+const register = new Registry();
+const register = new Registry();
+const register = new Registry();
 const register = new Registry();
 const counter = new promClient.Counter({
     name: 'items_added',
@@ -19,6 +31,7 @@ var redisConnected = false;
 
 var redisHost = process.env.REDIS_HOST || 'redis'
 var catalogueHost = process.env.CATALOGUE_HOST || 'catalogue'
+var cataloguePort = process.env.CATALOGUE_PORT || '8080'
 var cataloguePort = process.env.CATALOGUE_PORT || '8080'
 
 
