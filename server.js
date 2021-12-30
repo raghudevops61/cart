@@ -78,6 +78,30 @@ app.get('/health', (req, res) => {
     res.json(stat);
 });
 
+app.get('/health', (req, res) => {
+    var stat = {
+        app: 'OK',
+        redis: redisConnected
+    };
+    res.json(stat);
+});
+
+app.get('/health', (req, res) => {
+    var stat = {
+        app: 'OK',
+        redis: redisConnected
+    };
+    res.json(stat);
+});
+
+app.get('/health', (req, res) => {
+    var stat = {
+        app: 'OK',
+        redis: redisConnected
+    };
+    res.json(stat);
+});
+
 // Prometheus
 app.get('/metrics', (req, res) => {
     res.header('Content-Type', 'text/plain');
